@@ -5,17 +5,74 @@
   --accent-kolor: #404bbf;
   --background-origin: #ffffff;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--background-origin);
 }
-
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.navigation-page {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation-text {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.contact-adress {
+  display: flex;
+  align-items: center;
+}
+.logo-first {
+  margin-left: 156px;
+  margin-right: 76px;
+}
+.nav-link:not(:last-child) {
+  margin-right: 40px;
 }
 .navigation .link-item {
   font-style: normal;
@@ -43,6 +100,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
   text-decoration: none;
+}
+.adress-mail {
+  margin-left: auto;
+  margin-right: 40px;
 }
 .adress-mail:hover,
 .adress-mail:focus {
@@ -86,7 +147,10 @@ body {
   color: #f4f4fd;
 }
 .title-hero {
-  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 48px;
+  max-width: 496px;
+  margin: 0 auto 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -96,6 +160,11 @@ body {
 }
 
 .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  max-width: 1440px;
+  outline: 1px solid black;
+  text-align: center;
   background: var(--primary-text-color);
 }
 .btn-hero:hover,
@@ -104,13 +173,23 @@ body {
   background: var(--accent-kolor);
 }
 .btn-hero {
-  font-weight: 500;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.5;
   cursor: pointer;
   letter-spacing: 0.04em;
   color: var(--background-origin);
   background: var(--brand-color);
+}
+.features-description {
+  display: flex;
+  justify-content: space-between;
 }
 .features-caption {
   font-weight: 500;
