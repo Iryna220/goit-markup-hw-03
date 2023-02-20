@@ -51,6 +51,10 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+.navigation-page {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .page-header-container {
   display: flex;
   align-items: center;
@@ -58,21 +62,25 @@ img {
 .navigation-text {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 .navigation {
   display: flex;
-  align-items: center;
+  gap: 40px;
 }
 .contact-adress {
   display: flex;
   align-items: center;
 }
 .logo-first {
-  margin-left: 156px;
   margin-right: 76px;
 }
 .nav-link:not(:last-child) {
   margin-right: 40px;
+}
+.contact-item {
+  display: block;
+  padding: 24px 0;
 }
 .navigation .link-item {
   font-style: normal;
@@ -162,7 +170,6 @@ img {
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
-  max-width: 1440px;
   outline: 1px solid black;
   text-align: center;
   background: var(--primary-text-color);
@@ -173,10 +180,7 @@ img {
   background: var(--accent-kolor);
 }
 .btn-hero {
-  padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px;
+  padding: 16px 32px;
   border-radius: 4px;
   border: none;
   font-family: inherit;
@@ -188,9 +192,6 @@ img {
   background: var(--brand-color);
 }
 .features {
-  max-width: 1128px;
-}
-.main-gallery {
   max-width: 1128px;
 }
 .features-list {
@@ -286,26 +287,41 @@ img {
   background: var(--primary-text-color);
 }
 .footer-text {
-  margin-right: 156px;
   width: 264px;
+  margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
 }
-
+.gallery-content {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .modale-btn-text {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
   color: var(--brand-color);
 }
 .modale-btn-text:hover,
 .modale-btn-text:focus {
   color: var(--background-origin);
   background-color: var(--accent-kolor);
+}
+.modale-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 96px;
+  margin-bottom: 72px;
+  gap: 24px;
 }
 .gallery-titel {
   font-weight: 500;
@@ -320,4 +336,16 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+}
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.gallery-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+}
+.gallery-part {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
