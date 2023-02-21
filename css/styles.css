@@ -30,6 +30,7 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
+  padding: 0;
 }
 img {
   display: block;
@@ -39,10 +40,6 @@ img {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-.navigation-page {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .container {
   width: 1158px;
@@ -80,6 +77,9 @@ img {
 }
 .contact-item {
   display: block;
+  padding: 24px 0;
+}
+.link-item {
   padding: 24px 0;
 }
 .navigation .link-item {
@@ -188,11 +188,9 @@ img {
   line-height: 1.5;
   cursor: pointer;
   letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--background-origin);
   background: var(--brand-color);
-}
-.features {
-  max-width: 1128px;
 }
 .features-list {
   flex-basis: calc((100% - 3 * 24px) / 4);
@@ -309,6 +307,7 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   color: var(--brand-color);
+  background: #f4f4fd;
 }
 .modale-btn-text:hover,
 .modale-btn-text:focus {
@@ -319,7 +318,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 96px;
   margin-bottom: 72px;
   gap: 24px;
 }
@@ -347,5 +345,7 @@ img {
 }
 .gallery-part {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
 }
