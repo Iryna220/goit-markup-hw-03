@@ -239,6 +239,7 @@ img {
 .main-description {
   display: flex;
   gap: 24px;
+  padding-bottom: 120px;
 }
 .main-photo {
   flex-basis: calc((100% - 2 * 24px) / 3);
@@ -304,7 +305,7 @@ img {
   letter-spacing: 0.04em;
   cursor: pointer;
   padding: 12px 24px;
-  border: none;
+  border: 1px solid #e7e9fc;
   border-radius: 4px;
   color: var(--brand-color);
   background: #f4f4fd;
